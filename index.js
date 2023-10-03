@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import http from "http";
+import db from "./config/Database.js";
 
 dotenv.config();
 
@@ -13,6 +14,13 @@ app.use(cookieParser());
 app.use(express.json());
 
 const server = http.createServer(app);
+
+try {
+    await db.authenticate();
+    console.log("Database Connected");
+  } catch (error) {
+    console.log(error);
+  }
 
 server.listen(process.env.PORT, () =>
   console.log("Server listening on port " + process.env.PORT)
