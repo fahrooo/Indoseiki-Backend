@@ -1,0 +1,19 @@
+{
+  "name": "indoseiki-backend",
+  "version": "1.0.0",
+  "description": "Project Test PT. Indoseiki Metalutama",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fahrooo/Indoseiki-Backend.git"
+  },
+  "author": "Fahro Nur Fauzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fahrooo/Indoseiki-Backend/issues"
+  },
+  "homepage": "https://github.com/fahrooo/Indoseiki-Backend#readme"
+}
