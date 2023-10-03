@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fahrooo/Indoseiki-Backend/issues"
   },
-  "homepage": "https://github.com/fahrooo/Indoseiki-Backend#readme"
+  "homepage": "https://github.com/fahrooo/Indoseiki-Backend#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
