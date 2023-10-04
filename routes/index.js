@@ -15,7 +15,7 @@ router.put("/users/update/:id", putUser);
 router.delete("/users/delete/:id", deleteUser);
 
 // Book
-router.get("/book", getBook);
+router.post("/book", getBook);
 router.post("/book/create", postBook);
 router.put("/book/update/:id", putBook);
 router.delete("/book/delete/:id", deleteBook);
