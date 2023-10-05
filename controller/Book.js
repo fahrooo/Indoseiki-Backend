@@ -3,7 +3,9 @@ import { Op } from "sequelize";
 
 export const getBook = async (req, res) => {
   try {
-    const book = await Book.findAll();
+    const book = await Book.findAll({
+      order: [["year", "DESC"]],
+    });
 
     if (book.length > 0) {
       return res.status(200).json({
