@@ -30,10 +30,14 @@ const History = db.define(
 
 History.belongsTo(Users, {
   foreignKey: "idUser",
+  onDelete: "CASCADE",
+  onUpdate: "CASCADE",
 });
 
 History.belongsTo(Book, {
   foreignKey: "idBook",
+  onDelete: "CASCADE",
+  onUpdate: "CASCADE",
 });
 
 export default History;
