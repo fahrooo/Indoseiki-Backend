@@ -36,6 +36,6 @@ router.delete("/history/delete/:id", deleteHistory);
 
 // Get & Uploud Image
 router.get("/images/:image", getImage);
-router.post("/history/create", upload.single("file"), uploudImage);
+router.post("/upload", upload.single("file"), uploudImage);
 
 export default router;
