@@ -2,7 +2,14 @@ import express from "express";
 import { Login } from "../controller/Auth.js";
 import { getUser, postUser, putUser, deleteUser } from "../controller/Users.js";
 import { deleteBook, getBook, postBook, putBook } from "../controller/Book.js";
-import { deleteHistory, getHistory, postHistory, putHistory } from "../controller/History.js";
+import {
+  deleteHistory,
+  getHistory,
+  postHistory,
+  putHistory,
+} from "../controller/History.js";
+import { getImage, uploudImage } from "../controller/Uploud.js";
+import { upload } from "../upload.js";
 
 const router = express.Router();
 
@@ -26,5 +33,9 @@ router.get("/history", getHistory);
 router.post("/history/create", postHistory);
 router.put("/history/update/:id", putHistory);
 router.delete("/history/delete/:id", deleteHistory);
+
+// Get & Uploud Image
+router.get("/images/:image", getImage);
+router.post("/history/create", upload.single("file"), uploudImage);
 
 export default router;
